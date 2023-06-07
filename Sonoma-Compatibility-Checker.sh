@@ -105,8 +105,8 @@ COMPATIBILITY="False"
 
 # Checks if computer meets pre-requisites for Sonoma
 # This also means that if the computer is already running Sonoma it will be marked as false
-# You can change this behaviour by modifying the 21 into a 22
-if [[ "$OSVERSIONMAJOR" -ge 13 && "$OSVERSIONMAJOR" -le 21 ]]; then
+# You can change this behaviour by modifying the 22 into a 23
+if [[ "$OSVERSIONMAJOR" -ge 13 && "$OSVERSIONMAJOR" -le 22 ]]; then
 
 	# Transform GB into Bytes
 	GIGABYTES=$((1024 * 1024 * 1024))
