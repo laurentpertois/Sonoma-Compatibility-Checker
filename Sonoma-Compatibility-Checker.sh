@@ -58,7 +58,6 @@
 #
 #
 # Mac Hardware Requirements and equivalent as minimum Model Identifier
-#  	- MacBook (2017 or newer), ie MacBook10,1
 #  	- MacBook Pro (2018 or newer), ie MacBookPro15,1
 #  	- MacBook Air (2018 or newer), ie MacBookAir8,1
 #  	- Mac mini (2018 or newer), ie Macmini8,1
@@ -137,6 +136,8 @@ if [[ "$OSVERSIONMAJOR" -ge 13 && "$OSVERSIONMAJOR" -le 22 ]]; then
 	    COMPATIBILITY="True"
 	elif [[ "$MODELNAME" == "MacBookPro" && "$MODELVERSION" -ge 150 && "$MEMORYINSTALLED" -ge "$MINIMUMRAM" && "$FREESPACE" -ge "$MINIMUMSPACE" ]]; then
 	    COMPATIBILITY="True"
+	elif [[ "$MODELNAME" == "Mac" && "$MODELVERSION" -ge 130 && "$MEMORYINSTALLED" -ge "$MINIMUMRAM" && "$FREESPACE" -ge "$MINIMUMSPACE" ]]; then
+	    COMPATIBILITY="True"		    
 	fi
 	# Outputs result
 	echo "<result>$COMPATIBILITY</result>"
