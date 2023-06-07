@@ -69,6 +69,7 @@
 #  	- iMac Pro, ie iMacPro1,1&#13;
 #  	- Mac Pro (2019 or newer), ie MacPro7,1&#13;
 #  	- Mac Studio (2022 or newer), ie Mac13,1&#13;
+#	- MacBook Air M2 (2022 or newer), ie Mac14,1&#13;
 #&#13;
 #&#13;
 # Default compatibility is set to False if no test pass (variable COMPATIBILITY)&#13;
